@@ -13,8 +13,7 @@ const nocache = (req, res, next) => {
   next();
 }
 
-meetingRouter.post('/meeting', validation(meetingSchema), meetingController.createMeeting);
-meetingRouter.post('/meeting/save', validation(meetingSchema), meetingController.saveMeetingDetails);
-meetingRouter.post("/meeting/tokens",nocache, meetingController.generateToken);
+meetingRouter.post('/meetings', validation(meetingSchema), meetingController.createMeeting);
+meetingRouter.post("/meetings/tokens",nocache, meetingController.generateToken);
 
 module.exports = meetingRouter;
