@@ -3,7 +3,7 @@ const {RtcRole, RtcTokenBuilder} = require("agora-access-token");
 const Meeting = require('./meeting.model');
 
 const meetingController = {
-  createMeeting: async (req, res, next) => {
+  createMeeting: async (req, res) => {
     const {date, duration, agenda, saveForLater} = req.body;
 
     const newMeeting = new Meeting({
@@ -12,23 +12,31 @@ const meetingController = {
       agenda
     });
 
-    const result = await newMeeting.save()
+    try{
+      const result = await newMeeting.save()
 
-    if (saveForLater){
-      res.status(200).json({
-        status: 200,
-        message: "Meeting saved successfully",
-      });
-    }else{
-      res.status(200).json({
-        status: 200,
-        message: "Meeting created successfully",
-        data: [result]
+      if (saveForLater) {
+        res.status(200).json({
+          status: 200,
+          message: "Meeting saved successfully",
+        });
+      } else {
+        res.status(200).json({
+          status: 200,
+          message: "Meeting created successfully",
+          data: [result]
+        });
+      }
+    }catch (err){
+      console.log(err);
+      res.status(500).json({
+        status: 500,
+        message: "An error occurred while creating the meeting"
       });
     }
   },
 
-  generateToken: (req, res, next) => {
+  generateToken: (req, res) => {
     const APP_ID = config.APP_ID;
     const APP_CERTIFICATE = config.APP_CERTIFICATE;
 
