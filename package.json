@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "test": "jest --watchAll",
-    "start": "nodemon src/server.js"
+    "start": "node src/server.js"
   },
   "author": "King David",
   "license": "ISC",
