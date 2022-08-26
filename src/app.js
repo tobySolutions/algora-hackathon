@@ -10,13 +10,13 @@ app.use("/v1/api/", meetingRouter);
 
 
 app.get("*", (req, res, next) => {
-  next(new Error(""))
+  next(new Error("You've reached a path outside the map 😭"))
 })
 
 app.use((err, req, res, next) => {
-  console.log(err.message);
-  res.status(200).json({
-    status: 200,
+  console.log(err);
+  res.status(500).json({
+    status: 500,
     message: "Interval Server Error"
   });
 });
