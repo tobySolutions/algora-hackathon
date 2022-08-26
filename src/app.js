@@ -17,7 +17,7 @@ app.use((err, req, res, next) => {
   console.log(err);
   res.status(500).json({
     status: 500,
-    message: "Interval Server Error"
+    message: err.toString()
   });
 });
 
