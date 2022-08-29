@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container{
+ max-width: 1200px;
+ width: 80%;
+ margin: 0 auto;
+}
+
+.list{
+  @apply p-0 m-0 list-none flex gap-[1em];
+}

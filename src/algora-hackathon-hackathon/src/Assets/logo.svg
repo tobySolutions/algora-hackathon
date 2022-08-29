@@ -1,0 +1,29 @@
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_102_3167)">
+<rect x="2" y="2" width="68" height="68" rx="16" fill="#EEEEF0"/>
+<g clip-path="url(#clip0_102_3167)">
+<path d="M38.5918 35.9747L42.1402 40.0306L46.912 43.0797L47.7421 36.0003L46.912 29.0805L42.0488 31.759L38.5918 35.9747Z" fill="#00832D"/>
+<path d="M18.001 42.4209V48.4536C18.001 49.831 19.1191 50.9494 20.4968 50.9494H26.5295L27.7787 46.3912L26.5295 42.4209L22.3906 41.1717L18.0011 42.4209H18.001Z" fill="#0066DA"/>
+<path d="M26.5295 21L18.001 29.5285L22.3909 30.7747L26.5295 29.5285L27.756 25.6122L26.5295 21Z" fill="#E94235"/>
+<path d="M18.001 42.4235H26.5294V29.5284H18.001V42.4235Z" fill="#2684FC"/>
+<path d="M52.3601 24.6111L46.9119 29.0807V43.0797L52.3825 47.5666C53.2015 48.2082 54.3995 47.6235 54.3995 46.5825V25.5754C54.3995 24.5228 53.1729 23.941 52.3599 24.6112" fill="#00AC47"/>
+<path d="M38.5918 35.9747V42.4209H26.5295V50.9494H44.4164C45.7941 50.9494 46.9121 49.831 46.9121 48.4536V43.0797L38.5918 35.9747Z" fill="#00AC47"/>
+<path d="M44.4164 21H26.5295V29.5285H38.5918V35.9747L46.9122 29.0804V23.496C46.9122 22.1182 45.7941 21.0001 44.4164 21.0001" fill="#FFBA00"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_102_3167" x="0" y="0" width="76" height="76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="2" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_102_3167"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_102_3167" result="shape"/>
+</filter>
+<clipPath id="clip0_102_3167">
+<rect width="36.4" height="30" fill="white" transform="translate(18 21)"/>
+</clipPath>
+</defs>
+</svg>
