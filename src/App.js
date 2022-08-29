@@ -1,8 +1,7 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import Schedule from './components/Schedule';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
+import MeetingPage from './algora-hackathon-hackathon/src/components/pages/MeetingPage/MeetingPage';
+import First from './pages/first-page';
 
 function App() {
   const [meetingDetails, setMeetingDetails] = useState([])
@@ -12,13 +11,13 @@ function App() {
     setMeetingDetails([{topic: task.topic, time: task.time}])
   }
   return (
-    <div className=" bg-[#1E1E1E] ">
-      <div className=''>
-        <Navbar/>
-        <Schedule Details={onMeetingStart}/>
-      </div>
-      <div className=' w-full bottom-0'><Footer onMeetingStart={onMeetingStart}/></div>
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<First/>}/>
+          <Route path='meeting' element={<MeetingPage/>}/>
+        </Routes>
+    </BrowserRouter>
+   
   );
 }
 

@@ -1,12 +1,18 @@
 import './App.css'
 import { StateContextProvider } from './hooks/context';
 import MeetingPage from './components/pages/MeetingPage/MeetingPage';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <StateContextProvider>
-      <MeetingPage/>
-    </StateContextProvider>
+    <BrowserRouter>
+      <StateContextProvider>
+        <Routes>
+          <MeetingPage/>
+        </Routes>
+      </StateContextProvider>
+    </BrowserRouter>
+    
   );
 }
 

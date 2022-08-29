@@ -4,17 +4,10 @@ import Calendar from 'react-calendar';
 import {MdOutlineArrowForwardIos, MdOutlineArrowBackIosNew} from 'react-icons/md'
 
 
-const Schedule = ({Details}) => {
+const Schedule = () => {
     const [tasks, setTasks] = useState([1])
     const [taskInfo, setTaskInfo] = useState('')
     const [time, setTime] = useState(0)
-
-    useEffect(() => {
-        Details({
-            topic: taskInfo,
-            time
-        })
-    },[taskInfo, time])
 
     const prev = () => {
         return(
@@ -38,7 +31,7 @@ const Schedule = ({Details}) => {
         setTasks(newArr)
     }
   return (
-    <div className='flex flex-col md:flex-row mx-auto sm:mx-0 justify-between pt-[50px] bg-[#1E1E1E] pb-16'>
+    <div className='flex flex-col md:flex-row mx-auto sm:mx-0 justify-between pt-[50px] bg-[#1E1E1E] pb-24'>
         <div className=' flex ml-4 flex-col md:flex-row gap-6'>
             <div>
                 <div className='mb-[10px]'>
